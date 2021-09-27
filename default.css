@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+:root {
+    --background: #081C1F;
+    --red: #E43B37;
+    --yellow: #F7BC24;
+    --green: #68C74F;
+    --blue: #16B0DD;
+    --text: #B9E5EC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 24px;
+}
+
+body {
+    background: var(--background);
+    font-family: 'Mali', cursive;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+table, th, td {
+    border: 2px solid #8b7c65;
+    border-collapse: collapse;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: var(--background);
+    border: 3.5px solid var(--blue);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--red),
+    20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+    30px -30px 0 -3px var(--background), 30px -30px var(--green);
+}
+
+.team-img{
+    margin-right: 2rem;
+    width: 480px;
+}
+
+.team-info{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: .8em;
+}
+
+.team-info .title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.team-member table td{
+    padding: .5rem;
+}  
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.profile {
+    margin-bottom: 0.5rem;
+}
+
+.profile__title{
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: .8em;
+}
+
+.profile__info{
+    font-size: .7em;
+}
+
+.profile__info li{
+    margin: .25rem 0;
+}
+
+@media screen and (max-width: 838px){
+    .team-img{
+         margin: 0 auto;
+     }
+}
